@@ -13,6 +13,9 @@ app.use(
     }  )
 )
 
+app.get('/', (req, res) => {
+    res.send("HOLAMUNDO")
+})
 app.get('/iecho', (req, res) => {
     const pattern = new RegExp('^[A-Z]+$', 'i')
     console.log(req.query)
