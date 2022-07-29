@@ -4,7 +4,14 @@ const express = require('express')
 const app = express()
 const port = 80
 
-
+app.use(
+    cors(  {
+        origin: *,
+        credentials: true,
+        methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE','PATCH'],
+        allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'authorization']
+    }  )
+)
 
 app.get('/iecho', (req, res) => {
     const pattern = new RegExp('^[A-Z]+$', 'i')
