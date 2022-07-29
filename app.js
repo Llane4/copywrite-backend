@@ -6,10 +6,10 @@ const port = 80
 
 app.use(
     cors(  {
-        origin: *,
+        origin: "https://copywrite-frontend-llane.herokuapp.com/",
         credentials: true,
         methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE','PATCH'],
-        allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'authorization']
+        allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'authorization', "Access-Control-Allow-Origin"]
     }  )
 )
 
