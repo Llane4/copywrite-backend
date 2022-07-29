@@ -5,13 +5,14 @@ const app = express()
 const port = 80
 
 app.use(
-    cors(  {
-        origin: "https://copywrite-frontend-llane.herokuapp.com/",
-        credentials: true,
-        methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE','PATCH'],
-        allowedHeaders: *
+    cors(  //{
+        //origin: "https://copywrite-frontend-llane.herokuapp.com/",
+        //credentials: true,
+        //methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE','PATCH'],
+        //allowedHeaders: *
         
-    }  )
+    //}  
+    )
 )
 
 app.get('/iecho', (req, res) => {
